@@ -22,8 +22,8 @@ def check_code(code):
     response = requests.get(url)
     return response.status_code == 200
 
-WEBHOOK_URL_VALID = 'https://discord.com/api/webhooks/TON_WEBHOOK_VALID'
-WEBHOOK_URL_INVALID = 'https://discord.com/api/webhooks/TON_WEBHOOK_INVALID'
+WEBHOOK_URL_VALID = 'https://discord.com/api/webhooks/1209885252462579772/ffcDterrOviIjAxk3GrQ9G7L9vh-9rVCpNFTuEyMUVpt03aK81nh-tlQW-4WmBlvGTDl'
+WEBHOOK_URL_INVALID = 'https://discord.com/api/webhooks/1209885309958103090/GKMOGqCSYxwH4TMC3ipmmnEWwjtbHpy_P4A5-PDidAhljl6zrqtN2A4UjkgttS3JgsCd'
 
 def send_to_webhook(code, is_valid=True):
     url = WEBHOOK_URL_VALID if is_valid else WEBHOOK_URL_INVALID
