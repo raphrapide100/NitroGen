@@ -3,6 +3,8 @@ import requests
 import random
 import string
 
+hostingmode = true
+
 app = Flask(__name__)
 if __name__ == "__main__":
     import os
